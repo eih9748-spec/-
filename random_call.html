@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>랜덤 전화걸기</title>
+  <script>
+    window.onload = function() {
+      // 원하는 전화번호들 넣기
+      const numbers = [
+        "tel:01031124446",
+        "tel:01099361430",
+        "tel:01086824653",
+        "tel:01073399452"
+      ];
+      
+      // 랜덤 선택
+      const pick = numbers[Math.floor(Math.random() * numbers.length)];
+      
+      // 선택된 번호로 바로 이동 (전화걸기)
+      window.location.href = pick;
+    }
+  </script>
+</head>
+<body>
+  <h2>전화 연결 중입니다...</h2>
+  <p>잠시만 기다려주세요.</p>
+</body>
+</html>
